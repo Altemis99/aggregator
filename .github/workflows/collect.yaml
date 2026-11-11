@@ -65,7 +65,7 @@ jobs:
           fi
 
       - name: Collect
-        run: python -u subscribe/collect.py -g Altemis99/35ba7a2fe0ffe6dd781dbad2f1701d36 --all --overwrite --skip
+       run: python -u subscribe/collect.py -g "$GIST_LINK" --all --overwrite --skip
 
 
       - name: Timestamp
