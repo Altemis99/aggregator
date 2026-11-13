@@ -54,7 +54,7 @@ jobs:
           fi
 
       - name: Collect
-        run: python -u subscribe/collect.py -g "$GIST_LINK" --overwrite --skip
+        run: python -u subscribe/collect.py -g "$GIST_LINK" --overwrite --skip -n 50
 
       - name: Timestamp
         run: date
